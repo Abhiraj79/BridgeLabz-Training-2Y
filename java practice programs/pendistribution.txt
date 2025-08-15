@@ -1,0 +1,18 @@
+pendistribution
+public class PenDistribution {
+    public static void main(String[] args) {
+
+        // given values
+        int totalPens = 14;
+        int students = 3;
+
+        // pens per student (integer division)
+        int pensPerStudent = totalPens / students;
+
+        // remaining pens (modulus)
+        int remainingPens = totalPens % students;
+
+        // output
+        System.out.println("The Pen Per Student is " + pensPerStudent + " and the remaining pen not distributed is " + remainingPens);
+    }
+}

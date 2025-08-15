@@ -1,0 +1,22 @@
+earthVolume
+public class EarthVolume {
+    public static void main(String[] args) {
+
+        // given values
+        double radiusKm = 6378;
+        double kmToMiles = 0.621371; // 1 km = 0.621371 miles
+
+        // volume of sphere formula
+        double volumeKm3 = (4.0 / 3.0) * Math.PI * Math.pow(radiusKm, 3);
+
+        // convert radius to miles
+        double radiusMiles = radiusKm * kmToMiles;
+
+        // volume in cubic miles
+        double volumeMiles3 = (4.0 / 3.0) * Math.PI * Math.pow(radiusMiles, 3);
+
+        // output
+        System.out.println("The volume of earth in cubic kilometers is " + volumeKm3 +
+                           " and cubic miles is " + volumeMiles3);
+    }
+}

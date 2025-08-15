@@ -1,0 +1,15 @@
+harry age
+public class HarryAge {
+    public static void main(String[] args) {
+
+        // given values
+        int birthYear = 2000;
+        int currentYear = 2024;
+
+        // calculating age
+        int age = currentYear - birthYear;
+
+        // output
+        System.out.println("Harry's age in 2024 is " + age);
+    }
+}

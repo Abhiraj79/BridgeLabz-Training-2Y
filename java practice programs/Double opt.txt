@@ -1,0 +1,29 @@
+Double opt
+import java.util.Scanner;
+
+public class DoubleOpt {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // taking inputs
+        System.out.print("Enter value of a: ");
+        double a = sc.nextDouble();
+
+        System.out.print("Enter value of b: ");
+        double b = sc.nextDouble();
+
+        System.out.print("Enter value of c: ");
+        double c = sc.nextDouble();
+
+        // operator precedence: *, /, % happen before + and -
+        double result1 = a + b * c;   // multiplication first, then addition
+        double result2 = a * b + c;   // multiplication first, then addition
+        double result3 = c + a / b;   // division first, then addition
+        double result4 = a % b + c;   // modulus first, then addition
+
+        // output
+        System.out.println("The results of Double Operations are " + result1 + ", " + result2 + ", " + result3 + ", " + result4);
+
+        sc.close();
+    }
+}
