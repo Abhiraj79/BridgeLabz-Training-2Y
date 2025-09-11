@@ -1,0 +1,27 @@
+class Item {
+    int itemCode;
+    String itemName;
+    double price;
+
+    void displayDetails() {
+        System.out.println("Item Code: " + itemCode);
+        System.out.println("Item Name: " + itemName);
+        System.out.println("Price: " + price);
+    }
+
+    double totalCost(int quantity) {
+        return price * quantity;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Item i1 = new Item();
+        i1.itemCode = 101;
+        i1.itemName = "Notebook";
+        i1.price = 50;
+
+        i1.displayDetails();
+        System.out.println("Total Cost (for 5 items): " + i1.totalCost(5));
+    }
+}
